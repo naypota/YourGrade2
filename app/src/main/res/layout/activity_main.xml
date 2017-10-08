@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/classroom"
+    android:padding="24dp"
+    tools:context="com.example.user.yourgrade.MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Grade"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.034"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#99ffffff"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="86dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/NameScore"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/name_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_dark"
+            android:ems="10"
+            android:textColor="#000000"
+            android:inputType="textPersonName"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="@string/score" />
+
+        <EditText
+            android:id="@+id/score_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Find_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E6ffffff"
+        android:textColor="#000000"
+        android:text="@string/Calculate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/Exit_Button"
+        android:layout_toStartOf="@+id/Exit_Button" />
+
+    <Button
+        android:id="@+id/Exit_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E6ffffff"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/Find_Button"
+        android:text="@string/out"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
